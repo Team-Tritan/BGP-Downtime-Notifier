@@ -6,7 +6,7 @@ TARGET_URL="https://notify.kitty.software/bgp_down"
 send_notification() {
   local hostname="$1"
   local current_time="$(date)"
-  local message="Edge router $hostname is offline at $current_time. Fix it you small cock femboy fuck."
+  local message="Edge router $hostname is unreachable at $current_time. Fix it you small cock femboy fuck."
   curl -d "$message" "$TARGET_URL"
 }
 
